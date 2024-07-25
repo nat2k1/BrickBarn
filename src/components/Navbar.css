@@ -1,0 +1,27 @@
+/* src/components/Navbar.css */
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  margin-right: 15px;
+}
+
+.cart-count {
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-left: 5px;
+  font-size: 0.8rem;
+  color: white;
+}

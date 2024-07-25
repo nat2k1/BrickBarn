@@ -1,0 +1,48 @@
+/* src/custom.css */
+
+/* Custom color variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #28a745;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+}
+
+/* Apply custom colors */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--background-color) !important;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
