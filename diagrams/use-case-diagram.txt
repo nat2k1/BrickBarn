@@ -1,0 +1,34 @@
+                         +------------------------------------------+
+                         |              BrickBarn System            |
++---------------------+  |                                          |
+|  Customer           |  |   +----------------------------+         |
+|---------------------|  |   |   User Interface           |         |
+| - Browse Catalog    |  |   |                            |         |
+| - Search Products   |  |   |  (Use Case: Browse)        |         |
+| - Add to Cart       |  |   |  (Use Case: Search)        |         |
+| - Apply Discount    |  |   |  (Use Case: Add to Cart)   |         |
+| - Checkout          |  |   |  (Use Case: Apply Code)    |         |
+| - View Order Status |  |   |  (Use Case: Checkout)      |         |
+|                     |  |   |                            |         |
++---------------------+  |   +----------------------------+         |
+                         |                  ^                       |
++---------------------+  |                  |                       |
+|  Admin              |  |   +--------------------------+           |
+|---------------------|  |   |  Order Management System |           |
+| - Manage Inventory  |  |   |--------------------------|           |
+| - Process Orders    |  |   |  (Use Case: Update       |           |
+| - Update Catalog    |  |   |  Inventory)              |           |
+| - View Sales Data   |  |   |  (Use Case: Process      |           |
+|                     |  |   |  Orders)                 |           |
++---------------------+  |   |  (Use Case: View Sales   |           |
+                         |   |  Reports)                |           |
++---------------------+  |   +--------------------------+           |
+|  Guest              |  |                                          |
+|---------------------|  |   +----------------------------+         |
+| - Browse Catalog    |  |   |   Authentication System    |         |
+| - Search Products   |  |   |----------------------------|         |
+|                     |  |   |  (Use Case: Register)      |         |
++---------------------+  |   |  (Use Case: Login)         |         |
+                         |   |  (Use Case: Logout)        |         |
+                         |   +----------------------------+         |
+                         +------------------------------------------+

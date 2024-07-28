@@ -1,0 +1,57 @@
++-----------------+        +-----------------+        +-----------------+
+|     Product     |        |      Cart       |        |      User       |
++-----------------+        +-----------------+        +-----------------+
+| - id            |        | - items: List   |        | - userId        |
+| - name          |        | - totalPrice    |        | - email         |
+| - category      |        |                 |        | - passwordHash  |
+| - price         |        +-----------------+        |                 |
+| - availability  |        | + addItem()     |        +-----------------+
+| - imageURL      |        | + removeItem()  |        | + login()       |
++-----------------+        | + calculateTotal()|     | + register()    |
+| + displayInfo() |        | + applyDiscount()|       | + logout()      |
++-----------------+        +-----------------+        +-----------------+
+        ^                                                        ^
+        |                                                        |
+        |                                                        |
+        +-------------------+                      +-------------+
+                            |                      |
+                            |                      |
+                            |                      |
+                            |                      |
++-----------------+        +-----------------+     |
+| DiscountCode    |        | Order           |     |
++-----------------+        +-----------------+     |
+| - code          |        | - orderId       |     |
+| - discountValue |        | - userId        |     |
+| - expiration    |        | - items         |     |
++-----------------+        | - totalAmount   |     |
+| + validateCode()|        | - orderDate     |     |
++-----------------+        +-----------------+     |
+                                                     |
+                                                     |
+                                                     |
+                                                     |
++-----------------+        +-----------------+        |
+| Payment         |        | Shipping        |        |
++-----------------+        +-----------------+        |
+| - paymentId     |        | - shippingId    |        |
+| - orderId       |        | - orderId       |        |
+| - amount        |        | - address       |        |
+| - paymentMethod |        | - status        |        |
++-----------------+        +-----------------+        |
+| + processPayment()|      | + trackOrder()  |        |
++-----------------+        +-----------------+        |
+                                                      |
+                                                      |
+                                                      |
+                                                      v
+                                              +-----------------+
+                                              | Notification    |
+                                              +-----------------+
+                                              | - notificationId|
+                                              | - userId        |
+                                              | - message       |
+                                              | - date          |
+                                              +-----------------+
+                                              | + send()        |
+                                              +-----------------+

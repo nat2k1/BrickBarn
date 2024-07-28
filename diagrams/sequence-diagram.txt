@@ -1,0 +1,58 @@
+User          Browser/Client         Server           Database
+
+ |                  |                   |                  |
+ |   Browse Store   |                   |                  |
+ |----------------->|                   |                  |
+ |                  |   Get Products    |                  |
+ |                  |------------------>|                  |
+ |                  |                   |  Fetch Product   |
+ |                  |                   |<-----------------|
+ |                  |  Display Products |                  |
+ |<-----------------|                   |                  |
+ |                  |                   |                  |
+ | View Product     |                   |                  |
+ |----------------->|                   |                  |
+ |                  |   Get Product     |                  |
+ |                  |------------------>|                  |
+ |                  |                   | Fetch Product    |
+ |                  |                   | Details          |
+ |                  |                   |<-----------------|
+ |                  |  Display Product  |                  |
+ |<-----------------|                   |                  |
+ |                  |                   |                  |
+ | Add to Cart      |                   |                  |
+ |----------------->|                   |                  |
+ |                  |   Add to Cart     |                  |
+ |                  |------------------>|                  |
+ |                  |                   |  Update Cart     |
+ |                  |                   |  (Session)       |
+ |                  |                   |<-----------------|
+ |                  | Display Cart      |                  |
+ |<-----------------|                   |                  |
+ |                  |                   |                  |
+ | Proceed to Checkout                 |                  |
+ |------------------------------------>|                  |
+ |                  |                   |                  |
+ |                  |     Checkout      |                  |
+ |                  |------------------>|                  |
+ |                  |                   | Verify Inventory |
+ |                  |                   | & Payment Info   |
+ |                  |                   |                  |
+ |                  |                   |<-----------------|
+ |                  | Display Checkout  |                  |
+ |<-----------------|                   |                  |
+ |                  |                   |                  |
+ | Enter Payment Info                 |                  |
+ |------------------------------------>|                  |
+ |                  |                   |                  |
+ |                  |  Process Payment  |                  |
+ |                  |------------------>|                  |
+ |                  |                   |  Update Order    |
+ |                  |                   |  Status          |
+ |                  |                   |<-----------------|
+ |                  | Display Order     |                  |
+ |<-----------------| Confirmation      |                  |
+ |                  |                   |                  |
+ |  Order Confirmed  |                  |                  |
+ |<-----------------|                   |                  |
+ |                  |                   |                  |
