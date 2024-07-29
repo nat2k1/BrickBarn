@@ -80,10 +80,10 @@ The build outputs to the `build` folder and can be served by any static hosting 
 - [Revised Specification](./docs/SPECIFICATION.md)
 - [Workload Distribution Report](./docs/WORKLOAD_DISTRIBUTION.md)
 - [Version History](./docs/VERSION_HISTORY.md)
-- [Use-Case Diagram](./docs/USE_CASE_DIAGRAM.txt)
-- [Class Diagram](./docs/CLASS_DIAGRAM.txt)
-- [State Diagram](./docs/STATE_DIAGRAM.txt)
-- [Sequence Diagram](./docs/SEQUENCE_DIAGRAM.txt)
+- [Use-Case Diagram](./diagrams/USE_CASE_DIAGRAM.txt)
+- [Class Diagram](./diagrams/CLASS_DIAGRAM.txt)
+- [State Diagram](./diagrams/STATE_DIAGRAM.txt)
+- [Sequence Diagram](./diagrams/SEQUENCE_DIAGRAM.txt)
 
 
 ## Contributing
